@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f6fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      label {
+        font-weight: bold;
+        color: #34495e;
+      }
+
+      input, textarea {
+        width: 100%;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      button {
+        background: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/submit" method="post">
+      <h2>Feedback Form</h2>
+      <label>Name:</label><br />
+      <input type="text" name="name" required /><br />
+
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br />
+
+      <label>Message:</label><br />
+      <textarea name="message" rows="4" required></textarea><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+
+
